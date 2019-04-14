@@ -1,8 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
 .contenedor-principal {
-  background-color: red;
+  background-color: gray;
+  display: flex;
+  flex-flow: row wrap;
 }
 
 body {
   background-image: url("assets/chevrons-937583_1280.jpg");
+}
+
+t-root {
+  border: 1px solid black;
+}
+
+t-barra-superior {
+  border: 2px solid green;
+  flex: 100%;
+  text-align: center;
 }
