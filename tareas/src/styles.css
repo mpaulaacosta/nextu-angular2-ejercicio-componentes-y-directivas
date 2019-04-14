@@ -18,3 +18,9 @@ t-barra-superior {
   flex: 100%;
   text-align: center;
 }
+
+t-inicio {
+  border: 2px solid green;
+  flex: 100%;
+  text-align: center;
+}
