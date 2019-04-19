@@ -24,3 +24,13 @@ t-inicio {
   flex: 100%;
   text-align: center;
 }
+
+.contenedor-inicio {
+  display: flex;
+}
+
+.contenedor-inicio >* {
+  background-color: blue;
+  border: 3px solid red;
+  flex: 50%; /* en realidad no me funciona el porcentaje pero si no pongo esta línea flex no utiliza todo el ancho*/
+}
