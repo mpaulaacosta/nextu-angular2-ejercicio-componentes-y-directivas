@@ -1,0 +1,13 @@
+h2 {
+  float: left;
+}
+
+ul {
+  list-style-type: none;
+  float: right;
+}
+
+li {
+  display: inline;
+  padding: 8px;
+}
