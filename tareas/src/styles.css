@@ -15,13 +15,7 @@ t-root {
   border: 1px solid black;
 }*/
 
-t-barra-superior {
-  border: 2px solid green;
-  flex: 100%;
-  text-align: center;
-}
-
-t-inicio {
+.contenedor-principal >* {
   border: 2px solid green;
   flex: 100%;
   text-align: center;
@@ -35,4 +29,12 @@ t-inicio {
   background-color: blue;
   border: 3px solid red;
   flex: 50%; /* en realidad no me funciona el porcentaje pero si no pongo esta línea flex no utiliza todo el ancho*/
+  margin: 10px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.contenedor-inicio-derecho >* {
+  border: 3px solid yellow;
+  flex: 100%;
 }
