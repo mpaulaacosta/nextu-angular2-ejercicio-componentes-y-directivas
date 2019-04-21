@@ -1,0 +1,4 @@
+t-i-tareas-pendientes {
+  display: flex;
+  flex-flow: column wrap;
+}

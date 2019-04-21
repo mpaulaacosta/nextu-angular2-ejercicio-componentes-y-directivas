@@ -1,0 +1,7 @@
+.contenedor-i-tareas-pendientes {
+  background-color: gold;
+}
+
+.contenedor-i-tareas-pendientes > * {
+  border: 2px solid black;
+}
