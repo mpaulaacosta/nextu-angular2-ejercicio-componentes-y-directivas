@@ -14,11 +14,6 @@ t-root {
   border: 1px solid black;
 }*/
 
-.contenedor-principal >* {
-  border: 2px solid green;
-  flex: 100%;
-  text-align: center;
-}
 
 .contenedor-inicio {
   display: flex;
