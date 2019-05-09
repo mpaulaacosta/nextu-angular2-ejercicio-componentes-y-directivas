@@ -1,9 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
-.contenedor-principal {
-  background-color: gray;
+/*.contenedor-principal {
   display: flex;
   flex-flow: row wrap;
-}
+}*/
 
 body {
   font-family: sans-serif;
