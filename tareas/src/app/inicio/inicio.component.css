@@ -1,4 +1,9 @@
-t-i-tareas-pendientes {
+.contenedor-inicio {
   display: flex;
-  flex-flow: column wrap;
+  justify-content: space-between;
+}
+
+.contenedor-inicio >* {
+  background-color: blue;
+  width: 49%;
 }
