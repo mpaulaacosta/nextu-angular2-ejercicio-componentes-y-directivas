@@ -23,7 +23,6 @@ t-root {
   background-color: blue;
   border: 3px solid red;
   flex: 50%; /* en realidad no me funciona el porcentaje pero si no pongo esta línea flex no utiliza todo el ancho*/
-  margin: 10px;
   display: flex;
   flex-flow: row wrap;
 }
