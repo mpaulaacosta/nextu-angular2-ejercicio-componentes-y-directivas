@@ -1,7 +1,15 @@
 .contenedor-i-tareas-pendientes {
-  background-color: green;
+  border: 1px solid gray;
+  display: flex;
+  flex-flow: column;/*
+  align-content: flex-start;*/
+  height: 100%;
 }
 
 .contenedor-i-tareas-pendientes > * {
-  border: 2px solid black;
+  width: 100%;
+}
+
+.cuerpo-i-tareas-pendientes {
+  height: 100%;
 }

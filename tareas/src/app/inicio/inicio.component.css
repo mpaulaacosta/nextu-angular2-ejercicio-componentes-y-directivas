@@ -4,6 +4,38 @@
 }
 
 .contenedor-inicio >* {
-  background-color: blue;
   width: 49%;
+}
+
+.contenedor-inicio-derecho {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.contenedor-inicio-derecho >* {
+  width: 100%;
+}
+
+/* no sé por qué no funciona así que lo tuve que dejar en ..\..\styles.css
+.titulo-i-tareas {
+  font-size: 5.5em;
+}*/
+
+t-i-tareas-pendientes {
+  background-color: white;
+}
+
+t-i-tareas-hoy {
+  background-color: white;
+  border: 1px solid gray;
+}
+
+.separador-inicio-derecho {
+  height: 10px;
+}
+
+t-i-tareas-grupos {
+  background-color: white;
+  border: 1px solid gray;
 }

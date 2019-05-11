@@ -1,15 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
-/*.contenedor-principal {
-  display: flex;
-  flex-flow: row wrap;
-}*/
 
 body {
   font-family: sans-serif;
   background-image: url("assets/chevrons-937583_1280.jpg");
 }
-/*
-t-root {
-  display: flex;
-  border: 1px solid black;
-}*/
+
+.titulo-i-tareas {
+  font-size: 1.5em;
+  height: 1.6em;
+}
