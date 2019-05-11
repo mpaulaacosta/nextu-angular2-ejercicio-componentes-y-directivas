@@ -1,13 +1,19 @@
-<div class="titulo-i-tareas">Grupos</div>
+<div class="contenedor-i-tareas-grupos">
 
-<div class="cuerpo-i-tareas-grupos">
-  <ul>
-    <li>Trabajo</li>
-    <li>Amigos</li>
-    <li>Universidad</li>
-  </ul>
-</div>
+  <div class="titulo-i-tareas">Grupos</div>
 
-<div class="pie-i-tareas-grupos">
-  <input type="submit" name="adicionarGrupo" value="+G">
+  <div class="cuerpo-i-tareas-grupos">
+    <div class="item-grupo" *ngFor="let item of listaGrupos">
+      <div [ngClass]="{resaltado: item.resaltado}"
+       (mouseenter)="onHoverGroupIn(item)"
+       (mouseleave)="onHoverGroupOut(item)">
+        {{item.nombre}}
+      </div>
+    </div>
+  </div>
+
+  <div class="pie-i-tareas-grupos">
+    <input type="submit" name="adicionarGrupo" value="+G">
+  </div>
+
 </div>

@@ -1,7 +1,19 @@
-.cuerpo-i-tareas-grupos ul {
-  list-style: none;
+.contenedor-i-tareas-grupos {
+  display: flex;
+  flex-direction: column;
 }
 
-.cuerpo-i-tareas-grupos ul li {
-  display: inline;
+.cuerpo-i-tareas-grupos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item-grupo {
+  padding: 3px;
+  border: 1px solid deepskyblue;
+  margin: 10px;
+}
+
+.resaltado {
+  background-color: deepskyblue;
 }

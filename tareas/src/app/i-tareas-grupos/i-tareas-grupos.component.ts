@@ -12,4 +12,17 @@ export class ITareasGruposComponent implements OnInit {
   ngOnInit() {
   }
 
+  listaGrupos = [
+    {nombre: "Familia", resaltado: false},
+    {nombre: "Estudio", resaltado: false},
+    {nombre: "Carrera", resaltado: false}
+  ]
+
+  onHoverGroupIn(item) {
+    item.resaltado = true;
+  }
+  onHoverGroupOut(item) {
+    item.resaltado = false;
+  }
+
 }
