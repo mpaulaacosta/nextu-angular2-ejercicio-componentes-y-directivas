@@ -12,4 +12,10 @@ export class ITareasPendientesComponent implements OnInit {
   ngOnInit() {
   }
 
+  listaTareasPendientes = [
+    "Recoger libros",
+    "Firmar autorización",
+    "Cita con María"
+  ];
+
 }
