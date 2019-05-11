@@ -13,3 +13,7 @@
 .cuerpo-i-tareas-pendientes {
   height: 100%;
 }
+
+.pie-i-tareas-pendientes {
+  background-color: skyblue;
+}
