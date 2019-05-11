@@ -1,0 +1,7 @@
+.cuerpo-i-tareas-grupos ul {
+  list-style: none;
+}
+
+.cuerpo-i-tareas-grupos ul li {
+  display: inline;
+}
