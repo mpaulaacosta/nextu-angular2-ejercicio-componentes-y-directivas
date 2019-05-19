@@ -9,6 +9,7 @@ import { InicioComponent } from './inicio/inicio.component';
 import { ITareasPendientesComponent } from './i-tareas-pendientes/i-tareas-pendientes.component';
 import { ITareasHoyComponent } from './i-tareas-hoy/i-tareas-hoy.component';
 import { ITareasGruposComponent } from './i-tareas-grupos/i-tareas-grupos.component';
+import { NuevaTareaComponent } from './nueva-tarea/nueva-tarea.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ITareasGruposComponent } from './i-tareas-grupos/i-tareas-grupos.compon
     InicioComponent,
     ITareasPendientesComponent,
     ITareasHoyComponent,
-    ITareasGruposComponent
+    ITareasGruposComponent,
+    NuevaTareaComponent
   ],
   imports: [
     BrowserModule,

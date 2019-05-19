@@ -10,7 +10,13 @@ body {
   height: 1.6em;
 }
 
-input {
+input[type="submit"] {
   margin: 10px;
   float: right;
+}
+
+.titulo-tareas {
+  font-size: 1.2em;
+  height: 1.3em;
+  color: navy;
 }

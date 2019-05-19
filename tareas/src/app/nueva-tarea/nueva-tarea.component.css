@@ -1,0 +1,6 @@
+.contenedor-nueva-tarea {
+  border: 1px solid navy;
+  background-color: snow;
+  display: flex;
+  flex-flow: column;
+}
