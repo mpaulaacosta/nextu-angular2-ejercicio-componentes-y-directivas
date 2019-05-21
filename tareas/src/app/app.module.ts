@@ -12,6 +12,8 @@ import { ITareasGruposComponent } from './i-tareas-grupos/i-tareas-grupos.compon
 import { NuevaTareaComponent } from './nueva-tarea/nueva-tarea.component';
 import { VerGrupoComponent } from './ver-grupo/ver-grupo.component';
 
+import { AppRoutingModule } from './app-routing.module';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +28,8 @@ import { VerGrupoComponent } from './ver-grupo/ver-grupo.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
