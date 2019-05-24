@@ -10,7 +10,7 @@ body {
   height: 1.6em;
 }
 
-input[type="submit"] {
+button {
   margin: 10px;
   float: right;
 }
