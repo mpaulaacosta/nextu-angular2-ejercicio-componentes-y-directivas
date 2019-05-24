@@ -21,7 +21,7 @@ button {
   color: navy;
 }
 
-t-inicio {
+t-inicio, t-nueva-tarea {
   margin: 5px;
   width: 100%;
 }
