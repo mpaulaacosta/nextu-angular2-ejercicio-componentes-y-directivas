@@ -21,7 +21,7 @@ button {
   color: navy;
 }
 
-t-inicio, t-nueva-tarea {
+t-inicio, t-nueva-tarea, t-ver-grupo {
   margin: 5px;
   width: 100%;
 }
