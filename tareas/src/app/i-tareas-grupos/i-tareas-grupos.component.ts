@@ -1,22 +1,25 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 't-i-tareas-grupos',
   templateUrl: './i-tareas-grupos.component.html',
-  styleUrls: ['./i-tareas-grupos.component.css']
+  styleUrls: ['./i-tareas-grupos.component.css'],
+  providers: [DataService]
 })
 export class ITareasGruposComponent implements OnInit {
 
-  constructor() { }
+  listaGrupos: Object[];
+
+  constructor(private dataService: DataService) { }
 
   ngOnInit() {
-  }
-
-  listaGrupos = [
-    {nombre: "Familia", resaltado: false},
-    {nombre: "Estudio", resaltado: false},
-    {nombre: "Carrera", resaltado: false}
-  ]
+    this.listaGrupos = [
+      {nombre: "Familia", resaltado: false},
+      {nombre: "Estudio", resaltado: false},
+      {nombre: "Carrera", resaltado: false}
+    ];
+  };
 
   onHoverGroupIn(item) {
     item.resaltado = true;
