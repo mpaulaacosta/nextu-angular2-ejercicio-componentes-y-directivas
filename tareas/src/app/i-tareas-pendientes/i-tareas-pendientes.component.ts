@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 't-i-tareas-pendientes',
@@ -7,15 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ITareasPendientesComponent implements OnInit {
 
-  constructor() { }
+  private listaTareasPendientes: Object[];
+
+  constructor(private dataService: DataService) { }
 
   ngOnInit() {
+    this.listaTareasPendientes = this.dataService.obtenerTareas();/*
+     [
+      {titulo: "Recoger libros", descripcion: "asdf"},
+      {titulo: "Firmar autorización"},
+      {titulo: "Cine con María"}
+    ];*/
   }
-
-  listaTareasPendientes = [
-    "Recoger libros",
-    "Firmar autorización",
-    "Cita con María"
-  ];
 
 }
