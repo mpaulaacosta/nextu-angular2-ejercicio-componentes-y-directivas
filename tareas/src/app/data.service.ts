@@ -4,7 +4,11 @@
 export class DataService {
 /*
   constructor() { }*/
-  private grupos: string[] = ["Familia", "Estudio", "Trabajo"];
+  private grupos: Object[] = [
+    {nombre: "Familia", resaltado: false},
+    {nombre: "Estudio", resaltado: false},
+    {nombre: "Trabajo", resaltado: false}
+  ];
 
   obtenerGrupos() {
     return this.grupos;

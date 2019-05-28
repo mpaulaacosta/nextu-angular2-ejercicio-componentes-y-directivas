@@ -14,11 +14,7 @@ export class ITareasGruposComponent implements OnInit {
   constructor(private dataService: DataService) { }
 
   ngOnInit() {
-    this.listaGrupos = [
-      {nombre: "Familia", resaltado: false},
-      {nombre: "Estudio", resaltado: false},
-      {nombre: "Carrera", resaltado: false}
-    ];
+    this.listaGrupos = this.dataService.obtenerGrupos();
   };
 
   onHoverGroupIn(item) {
