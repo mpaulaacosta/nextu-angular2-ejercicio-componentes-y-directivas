@@ -10,7 +10,7 @@ const routes: Routes = [
     children: []*/
   },
   { path: 'nueva-tarea', component: NuevaTareaComponent},
-  { path: 'ver-grupo', component: VerGrupoComponent}
+  { path: 'ver-grupo/:nombre', component: VerGrupoComponent}
 ];
 
 @NgModule({
