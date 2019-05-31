@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 't-i-tareas-hoy',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ITareasHoyComponent implements OnInit {
 
-  constructor() { }
+  private listaTareasHoy: Object[]=[];
+
+  constructor(private dataService: DataService) { }
 
   ngOnInit() {
+    this.listaTareasHoy = this.dataService.obtenerTareasHoy();
   }
 
 }

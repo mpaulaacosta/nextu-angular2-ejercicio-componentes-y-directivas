@@ -10,7 +10,12 @@ export class DataService {
     {nombre: "Trabajo", resaltado: false}
   ];
 
-  private tareas: Object[] = [
+  private tareas: {
+    titulo: string,
+    descripcion: string,
+    fecha: string,
+    grupo: string
+  }[] = [
     {
       titulo: "Recoger libros",
       descripcion: "Ir, pedirlos y volver.",
@@ -32,7 +37,7 @@ export class DataService {
     {
       titulo: "Estudiar Angular2",
       descripcion: "Hacer el ejercicio",
-      fecha: "2019-05-27",
+      fecha: "2019-05-28",
       grupo: "Estudio"
     }
   ]
@@ -43,6 +48,16 @@ export class DataService {
 
   obtenerTareas() {
     return this.tareas;
+  }
+
+  obtenerTareasHoy() {
+    let tareasHoy: Object[] = [];
+    this.tareas.forEach(element => {
+      if (element.fecha == "2019-05-28"){
+        tareasHoy.push(element);
+      }
+    })
+    return tareasHoy;
   }
 
 }

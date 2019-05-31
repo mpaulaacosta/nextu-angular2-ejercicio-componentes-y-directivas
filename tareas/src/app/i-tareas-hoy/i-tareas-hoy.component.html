@@ -2,7 +2,6 @@
 
 <div class="cuerpo-i-tareas">
   <ul>
-    <li>para ahorita</li>
-    <li>para más tarde</li>
+    <li *ngFor="let tareaHoy of listaTareasHoy">{{tareaHoy.titulo}}</li>
   </ul>
 </div>
