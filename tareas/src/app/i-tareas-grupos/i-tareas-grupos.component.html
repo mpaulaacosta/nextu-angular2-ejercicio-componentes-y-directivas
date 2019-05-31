@@ -7,7 +7,7 @@
       <div [ngClass]="{resaltado: item.resaltado}"
        (mouseenter)="onHoverGroupIn(item)"
        (mouseleave)="onHoverGroupOut(item)">
-        <a [routerLink]="['ver-grupo']">{{item.nombre}}</a>
+        <a [routerLink]="['ver-grupo', item.nombre]">{{item.nombre}}</a>
       </div>
     </div>
   </div>
