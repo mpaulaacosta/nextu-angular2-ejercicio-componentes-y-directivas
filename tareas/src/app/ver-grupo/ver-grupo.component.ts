@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 't-ver-grupo',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VerGrupoComponent implements OnInit {
 
-  constructor() { }
+  constructor(private activatedRoute: ActivatedRoute) { }
 
   ngOnInit() {
   }
