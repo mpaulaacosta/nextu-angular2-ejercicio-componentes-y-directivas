@@ -8,7 +8,11 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class VerGrupoComponent implements OnInit {
 
-  constructor(private activatedRoute: ActivatedRoute) { }
+  nombreGrupo: string;
+
+  constructor(private activatedRoute: ActivatedRoute) {
+    this.nombreGrupo = this.activatedRoute.snapshot.params['nombre'];
+  }
 
   ngOnInit() {
   }
