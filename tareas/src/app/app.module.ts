@@ -13,6 +13,7 @@ import { NuevaTareaComponent } from './nueva-tarea/nueva-tarea.component';
 import { VerGrupoComponent } from './ver-grupo/ver-grupo.component';
 
 import { AppRoutingModule } from './app-routing.module';
+import { EsdehoyPipe } from './esdehoy.pipe';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { AppRoutingModule } from './app-routing.module';
     ITareasHoyComponent,
     ITareasGruposComponent,
     NuevaTareaComponent,
-    VerGrupoComponent
+    VerGrupoComponent,
+    EsdehoyPipe
   ],
   imports: [
     BrowserModule,

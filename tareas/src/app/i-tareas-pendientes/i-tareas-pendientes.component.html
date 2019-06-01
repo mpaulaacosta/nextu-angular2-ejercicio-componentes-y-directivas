@@ -10,7 +10,7 @@
 
   <div class="cuerpo-i-tareas-pendientes">
     <ul>
-      <li *ngFor="let tareaPendiente of listaTareasPendientes">{{tareaPendiente.titulo}}</li>
+      <li *ngFor="let tareaPendiente of listaTareasPendientes">{{tareaPendiente.titulo}} ({{tareaPendiente.fecha | esdehoy}})</li>
     </ul>
   </div>
 
