@@ -15,6 +15,8 @@ import { VerGrupoComponent } from './ver-grupo/ver-grupo.component';
 import { AppRoutingModule } from './app-routing.module';
 import { EsdehoyPipe } from './esdehoy.pipe';
 
+import { HttpService } from './http.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +35,7 @@ import { EsdehoyPipe } from './esdehoy.pipe';
     HttpModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [HttpService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

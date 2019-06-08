@@ -1,9 +1,13 @@
-/*import { Injectable } from '@angular/core';
+import { Injectable } from '@angular/core';
 
-@Injectable()*/
+import { HttpService } from './http.service';
+import { Response } from '@angular/http';
+
+@Injectable()
 export class DataService {
-/*
-  constructor() { }*/
+
+  constructor(private httpService: HttpService) { }
+
   private grupos: Object[] = [
     {nombre: "Familia", resaltado: false},
     {nombre: "Estudio", resaltado: false},
@@ -47,6 +51,9 @@ export class DataService {
   }
 
   obtenerTareas() {
+    this.httpService.getDatos().subscribe(
+      (data: Response) => console.log(data)
+    );
     return this.tareas;
   }
 
