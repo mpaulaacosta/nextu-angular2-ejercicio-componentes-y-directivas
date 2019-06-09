@@ -50,7 +50,10 @@ export class DataService {
     return this.grupos;
   }
 
-  obtenerTareas() {
+  obtenerTareas() {/*
+    En la lección #4 no concluyen con la forma como se debería
+    incorporar el servicio HTTP en el servicio DATA, pero ése es
+    el primer punto del ejercicio al final de la lección #5.*/
     this.httpService.getDatos().subscribe(
       (data: Response) => console.log(data)
     );
